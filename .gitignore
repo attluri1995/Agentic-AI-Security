@@ -7,3 +7,6 @@ venv/
 .DS_Store
 *.sqlite
 *.db
+prompt_infiltration/fixtures/knowledge_base.json
+prompt_infiltration/fixtures/ticket_queue.json
+prompt_infiltration/fixtures/review_queue.json

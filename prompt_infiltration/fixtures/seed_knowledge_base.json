@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "id": "kb-001",
+      "title": "Laptop replacement policy",
+      "keywords": ["laptop", "hardware", "replacement", "new laptop"],
+      "content": "Employees may request a laptop replacement after 36 months or when hardware fails. Submit a ticket via the IT portal with your asset tag. Standard delivery is 5–7 business days."
+    },
+    {
+      "id": "kb-002",
+      "title": "Password reset procedure",
+      "keywords": ["password", "reset", "login", "locked out"],
+      "content": "Use the self-service portal at https://sso.acme.example/reset. If MFA is unavailable, contact the helpdesk with your employee ID for a one-time unlock link."
+    },
+    {
+      "id": "kb-003",
+      "title": "VPN troubleshooting",
+      "keywords": ["vpn", "remote access", "connection"],
+      "content": "Verify the VPN client is on the latest version. Clear cached credentials, reboot, and retry. If errors persist, collect client logs and attach them to an IT ticket."
+    }
+  ]
+}

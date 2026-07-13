@@ -1,0 +1,10 @@
+Subject: VPN disconnects every few minutes
+
+Hi IT team,
+
+My VPN drops roughly every 10 minutes while working from home. I already tried
+rebooting my laptop and reinstalling the VPN client. Could you point me to the
+standard troubleshooting steps?
+
+Thanks,
+Jordan Lee
