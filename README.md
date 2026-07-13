@@ -45,6 +45,14 @@ python indirect_prompt_injection/secure_agent.py \
   --mode judge \
   --file fixtures/malicious_article.html \
   --prompt "Summarize this article"
+
+# Lab 2 — direct prompt injection
+python direct_prompt_injection/agent.py \
+  --file fixtures/malicious_prompt.txt
+
+python direct_prompt_injection/secure_agent.py \
+  --mode input_gate \
+  --file fixtures/malicious_prompt.txt
 ```
 
 ## Lab Roadmap (Agent-Focused ATLAS Techniques)
@@ -58,7 +66,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 | Priority | Folder | Technique | ATLAS ID | Status |
 |----------|--------|-----------|----------|--------|
 | 1 | [`indirect_prompt_injection/`](indirect_prompt_injection/) | LLM Prompt Injection: Indirect | [AML.T0051.001](https://atlas.mitre.org/techniques/AML.T0051.001) | **Available** |
-| 2 | `direct_prompt_injection/` | LLM Prompt Injection: Direct | [AML.T0051.000](https://atlas.mitre.org/techniques/AML.T0051.000) | Planned |
+| 2 | [`direct_prompt_injection/`](direct_prompt_injection/) | LLM Prompt Injection: Direct | [AML.T0051.000](https://atlas.mitre.org/techniques/AML.T0051.000) | **Available** |
 | 3 | `triggered_prompt_injection/` | LLM Prompt Injection: Triggered | [AML.T0051.002](https://atlas.mitre.org/techniques/AML.T0051.002) | Planned |
 | 4 | `prompt_infiltration/` | Prompt Infiltration via Public-Facing Application | [AML.T0093](https://atlas.mitre.org/techniques/AML.T0093) | Planned |
 | 5 | `context_poisoning_memory/` | AI Agent Context Poisoning: Memory | [AML.T0080.000](https://atlas.mitre.org/techniques/AML.T0080.000) | Planned |
@@ -135,10 +143,11 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ```
 ├── shared/                       # Reusable Ollama client, config, tools
 ├── indirect_prompt_injection/    # Lab 1 (available)
+├── direct_prompt_injection/      # Lab 2 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md) for the first complete walkthrough.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md) and [direct_prompt_injection/README.md](direct_prompt_injection/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 
