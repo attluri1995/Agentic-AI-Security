@@ -1,6 +1,6 @@
-# Hands-On Agent Security Labs (HASL)
+# Hands-On AI Security Labs
 
-Hands-on labs for learning agentic AI security, mapped to vulnerabilities in the [MITRE ATLAS](https://atlas.mitre.org/) framework.
+Hands-on labs for learning AI agent security, mapped to vulnerabilities in the [MITRE ATLAS](https://atlas.mitre.org/) framework.
 
 Each lab directory contains three artifacts:
 
@@ -119,7 +119,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 | Priority | Folder | Technique | ATLAS ID | Status |
 |----------|--------|-----------|----------|--------|
 | 23 | `discover_agent_configuration/` | Discover AI Agent Configuration | [AML.T0084](https://atlas.mitre.org/techniques/AML.T0084) | Planned |
-| 24 | `multi_agent_delegation_hijack/` | Multi-agent orchestrator / delegation abuse *(HASL extension)* | Related: [AML.T0053](https://atlas.mitre.org/techniques/AML.T0053), [AML.T0080.001](https://atlas.mitre.org/techniques/AML.T0080.001) | Planned |
+| 24 | `multi_agent_delegation_hijack/` | Multi-agent orchestrator / delegation abuse *(custom lab extension)* | Related: [AML.T0053](https://atlas.mitre.org/techniques/AML.T0053), [AML.T0080.001](https://atlas.mitre.org/techniques/AML.T0080.001) | Planned |
 | 25 | `ai_service_api_c2/` | AI Service API (agent as C2 channel) | [AML.T0096](https://atlas.mitre.org/techniques/AML.T0096) | Planned |
 
 **Note:** `multi_agent_delegation_hijack/` covers orchestrator hijacking and credential relay across delegation chains — a pattern discussed in agentic gap analyses but not yet a standalone ATLAS technique. It will map to related official techniques in the lab README.
