@@ -53,6 +53,17 @@ python direct_prompt_injection/agent.py \
 python direct_prompt_injection/secure_agent.py \
   --mode input_gate \
   --file fixtures/malicious_prompt.txt
+
+# Lab 3 — triggered prompt injection
+python triggered_prompt_injection/agent.py \
+  --file fixtures/benign_query.txt
+
+python triggered_prompt_injection/agent.py \
+  --file fixtures/trigger_query.txt
+
+python triggered_prompt_injection/secure_agent.py \
+  --mode quarantine \
+  --file fixtures/trigger_query.txt
 ```
 
 ## Lab Roadmap (Agent-Focused ATLAS Techniques)
@@ -67,7 +78,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 |----------|--------|-----------|----------|--------|
 | 1 | [`indirect_prompt_injection/`](indirect_prompt_injection/) | LLM Prompt Injection: Indirect | [AML.T0051.001](https://atlas.mitre.org/techniques/AML.T0051.001) | **Available** |
 | 2 | [`direct_prompt_injection/`](direct_prompt_injection/) | LLM Prompt Injection: Direct | [AML.T0051.000](https://atlas.mitre.org/techniques/AML.T0051.000) | **Available** |
-| 3 | `triggered_prompt_injection/` | LLM Prompt Injection: Triggered | [AML.T0051.002](https://atlas.mitre.org/techniques/AML.T0051.002) | Planned |
+| 3 | [`triggered_prompt_injection/`](triggered_prompt_injection/) | LLM Prompt Injection: Triggered | [AML.T0051.002](https://atlas.mitre.org/techniques/AML.T0051.002) | **Available** |
 | 4 | `prompt_infiltration/` | Prompt Infiltration via Public-Facing Application | [AML.T0093](https://atlas.mitre.org/techniques/AML.T0093) | Planned |
 | 5 | `context_poisoning_memory/` | AI Agent Context Poisoning: Memory | [AML.T0080.000](https://atlas.mitre.org/techniques/AML.T0080.000) | Planned |
 | 6 | `context_poisoning_thread/` | AI Agent Context Poisoning: Thread | [AML.T0080.001](https://atlas.mitre.org/techniques/AML.T0080.001) | Planned |
@@ -144,10 +155,11 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── shared/                       # Reusable Ollama client, config, tools
 ├── indirect_prompt_injection/    # Lab 1 (available)
 ├── direct_prompt_injection/      # Lab 2 (available)
+├── triggered_prompt_injection/   # Lab 3 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md) and [direct_prompt_injection/README.md](direct_prompt_injection/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), and [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 
