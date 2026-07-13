@@ -1,6 +1,6 @@
 # Hands-On AI Security Labs
 
-Hands-on labs for learning AI agent security, mapped to vulnerabilities in the [MITRE ATLAS](https://atlas.mitre.org/) framework.
+Hands-on labs for learning AI security, mapped to vulnerabilities in the [MITRE ATLAS](https://atlas.mitre.org/) framework.
 
 Each lab directory contains three artifacts:
 
