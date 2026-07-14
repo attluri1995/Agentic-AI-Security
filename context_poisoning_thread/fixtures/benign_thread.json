@@ -1,0 +1,13 @@
+{
+  "channel": "#it-help",
+  "turns": [
+    {
+      "actor": "maya",
+      "message": "My managed laptop is set to Pacific time. How do I change it to Eastern time?"
+    },
+    {
+      "actor": "devon",
+      "message": "What is the normal process for requesting Project Aurora access?"
+    }
+  ]
+}
