@@ -1,0 +1,17 @@
+{
+  "user_id": "employee-42",
+  "entries": [
+    {
+      "id": "mem-001",
+      "content": "Prefers email notifications for ticket updates.",
+      "source": "user_request",
+      "infiltrated": false
+    },
+    {
+      "id": "mem-002",
+      "content": "Primary workstation is a MacBook Pro; use VPN split-tunnel guidance when relevant.",
+      "source": "user_request",
+      "infiltrated": false
+    }
+  ]
+}
