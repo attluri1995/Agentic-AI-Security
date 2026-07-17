@@ -140,3 +140,12 @@ python direct_prompt_injection/secure_agent.py \
 | Combined | Defense in depth | Higher complexity |
 
 For production, pair input classification with least-privilege tool access, prompt/secret separation, and audit logging on policy-violation attempts.
+
+## Real-World References
+
+These are mostly public research disclosures and industry write-ups, not confirmed criminal breaches:
+
+- [Prompt Injection](https://simonwillison.net/2022/Sep/12/prompt-injection/) — Simon Willison's early write-up naming and framing direct prompt injection against LLM apps.
+- [OWASP Top 10 for LLM Applications — LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) — industry taxonomy covering direct and indirect injection.
+- [MITRE ATLAS — LLM Prompt Injection: Direct (AML.T0051.000)](https://atlas.mitre.org/techniques/AML.T0051.000) — technique definition and related case studies.
+- Jailbreak campaigns such as “DAN” (Do Anything Now) styles illustrate the same failure mode as this lab: the user message overrides system rules and elicits policy-violating or secret-leaking behavior.

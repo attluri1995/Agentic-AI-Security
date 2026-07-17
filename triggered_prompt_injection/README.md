@@ -149,3 +149,12 @@ python triggered_prompt_injection/secure_agent.py \
 | Combined | Defense in depth | Needs provenance logging and ingest review |
 
 For production, pair retrieval gates with KB upload review, content signing, anomaly detection on search triggers, and least-privilege tool access.
+
+## Real-World References
+
+These are mostly public research disclosures and ATLAS case studies, not confirmed criminal breaches:
+
+- [Morris II: A Self-Replicating Prompt Injection Worm](https://arxiv.org/abs/2403.02817) — Cohen et al. demonstrated a worm that spreads through GenAI ecosystems when poisoned content is later retrieved (RAG/email-style activation).
+- [Data Exfiltration from Slack AI via Indirect Prompt Injection (AML.CS0035)](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0035-data-exfiltration-from-slack-ai-via-indirect-prompt-injection) / [PromptArmor write-up](https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via) — a public-channel payload was retrieved later when a victim queried Slack AI.
+- [Microsoft Copilot: From Prompt Injection to Exfiltration](https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/) — Embrace the Red showed conditional / content-triggered behavior when Copilot processed attacker-controlled documents or email.
+- [AgentHopper: An AI Virus](https://embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/) — conditional prompt-injection payloads that activate only for specific coding agents.

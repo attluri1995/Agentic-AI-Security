@@ -200,3 +200,12 @@ instructions from untrusted data, avoid restoring privileges merely because a ne
 turn began, require explicit current-user intent for sensitive actions, enforce
 authorization inside tool handlers, and add human approval for consequential
 operations.
+
+## Real-World References
+
+These are mostly public research disclosures and ATLAS case studies, not confirmed criminal breaches:
+
+- [Google Gemini: Planting Instructions For Delayed Automatic Tool Invocation](https://embracethered.com/blog/posts/2024/llm-context-pollution-and-delayed-automated-tool-invocation/) — Embrace the Red showed Gemini delaying tool use until a later turn to bypass same-turn tool restrictions ([AML.CS0038](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0038-planting-instructions-for-delayed-automatic-ai-agent-tool-invocation)).
+- [Hacking Gemini's Memory with Prompt Injection and Delayed Tool Invocation](https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/) — the same delay pattern used to invoke Gemini’s memory tool after untrusted document processing.
+- [MITRE ATLAS — Delay Execution of LLM Instructions (AML.T0094)](https://atlas.mitre.org/techniques/AML.T0094) — technique definition for planting instructions that execute on a future event or interaction.
+- [Memory poisoning in AI agents: exploits that wait](https://christian-schneider.net/blog/persistent-memory-poisoning-in-ai-agents/) — explains why turn-scoped tool guards fail when attacker text waits for a later trusted turn.

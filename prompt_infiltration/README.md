@@ -210,3 +210,12 @@ flowchart TB
 | Combined + retrieval guards | Defense in depth | More moving parts |
 
 For production, treat public-facing inputs as **untrusted until reviewed**, never auto-promote them to AI-trusted corpora, and monitor indexer outputs for instruction-shaped content.
+
+## Real-World References
+
+These are mostly public research disclosures and ATLAS case studies, not confirmed criminal breaches:
+
+- [ShareLeak: Taking the Wheel of Microsoft’s Copilot Studio (CVE-2026-21520)](https://www.capsulesecurity.io/blog-post/shareleak-taking-the-wheel-of-microsofts-copilot-studio-cve-2026-21520) — Capsule Security showed that a public SharePoint form field could infiltrate instructions into a Copilot Studio agent.
+- [PipeLeak: Exploiting Salesforce Agentforce With Indirect Prompt Injection](https://www.capsulesecurity.io/blog-post/pipeleak-the-lead-that-stole-your-database-exploiting-salesforce-agentforce-with-indirect-prompt-injection) — malicious instructions planted via a public lead form were later followed by the agent.
+- [Data Exfiltration from Slack AI via Indirect Prompt Injection](https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via) — attacker posts in a public Slack channel became AI-trusted retrieval content for other users.
+- [Planting Instructions for Delayed Automatic AI Agent Tool Invocation (AML.CS0038)](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0038-planting-instructions-for-delayed-automatic-ai-agent-tool-invocation) — Gemini case study that also maps to Prompt Infiltration via a public-facing email path.

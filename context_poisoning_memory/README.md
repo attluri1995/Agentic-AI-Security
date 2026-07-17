@@ -222,3 +222,12 @@ flowchart TB
 | Combined | Defense in depth | More moving parts |
 
 For production, treat memory writes like **untrusted ingestion**, treat recalled memory like **untrusted retrieval**, keep secrets out of the system prompt, and log every memory write with user and content hash.
+
+## Real-World References
+
+These are mostly public research disclosures, not confirmed criminal breaches:
+
+- [When AI Remembers Too Much – Persistent Behaviors in Agents’ Memory](https://unit42.paloaltonetworks.com/indirect-prompt-injection-poisons-ai-longterm-memory/) — Unit 42 PoC showing Amazon Bedrock Agent long-term memory poisoned via indirect prompt injection.
+- [Hacking Gemini's Memory with Prompt Injection and Delayed Tool Invocation](https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/) — Embrace the Red demonstrated false memories written into Gemini Advanced and recalled across later sessions.
+- [Memory poisoning in AI agents: exploits that wait](https://christian-schneider.net/blog/persistent-memory-poisoning-in-ai-agents/) — overview of persistent memory attacks, including delayed activation patterns.
+- [MITRE ATLAS — AI Agent Context Poisoning: Memory (AML.T0080.000)](https://atlas.mitre.org/techniques/AML.T0080.000) — technique definition for durable agent-memory poisoning.

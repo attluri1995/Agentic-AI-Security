@@ -148,3 +148,12 @@ Models with stronger instruction-following may resist injection even in the vuln
 | Combined (separation + judge) | Defense in depth | Higher complexity and cost |
 
 For production systems, combine structural separation with deterministic sanitization, output validation, and least-privilege tool design.
+
+## Real-World References
+
+These are mostly public research disclosures and ATLAS case studies, not confirmed criminal breaches:
+
+- [Indirect Prompt Injection Threats: Bing Chat Data Pirate (AML.CS0020)](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0020-indirect-prompt-injection-threats-bing-chat-data-pirate) — Kai Greshake et al. showed that a malicious webpage could steer Bing Chat when the user merely had the page open.
+- [ChatGPT Conversation Exfiltration (AML.CS0021)](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0021-chatgpt-conversation-exfiltration) — Embrace the Red demonstrated conversation exfiltration via markdown image URLs after ChatGPT ingested attacker-controlled web content.
+- [Not What You've Signed Up For](https://arxiv.org/abs/2302.12173) — foundational paper on indirect prompt injection (Greshake et al., 2023).
+- [How Microsoft defends against indirect prompt injection attacks](https://www.microsoft.com/en-us/msrc/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks) — vendor perspective on defense-in-depth when untrusted content enters LLM context.

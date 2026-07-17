@@ -160,3 +160,12 @@ flowchart LR
 ## Remediation Summary
 
 Treat shared chat history as multi-tenant, untrusted input. Validate messages before admission, preserve speaker provenance in application logic, isolate context where possible, separate historical data from current instructions, rotate compromised threads, keep secrets out of prompts, and monitor output and actions independently.
+
+## Real-World References
+
+These are mostly public research disclosures and ATLAS case studies, not confirmed criminal breaches:
+
+- [Data Exfiltration from Slack AI via Indirect Prompt Injection](https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via) / [AML.CS0035](https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0035-data-exfiltration-from-slack-ai-via-indirect-prompt-injection) — attacker content posted in a shared workspace channel later influenced Slack AI answers for other users.
+- [Google Gemini: Planting Instructions For Delayed Automatic Tool Invocation](https://embracethered.com/blog/posts/2024/llm-context-pollution-and-delayed-automated-tool-invocation/) — multi-turn chat history pollution where earlier untrusted text still steers later turns.
+- [MITRE ATLAS — AI Agent Context Poisoning: Thread (AML.T0080.001)](https://atlas.mitre.org/techniques/AML.T0080.001) — technique definition for poisoning the active conversation thread.
+- Shared enterprise assistants (Slack, Teams, channel bots) inherit the same risk whenever one participant’s message is retained in the model history used for another participant.
