@@ -100,7 +100,16 @@ python delay_execution/agent.py \
 python delay_execution/secure_agent.py \
   --mode taint_tracking \
   --file fixtures/delayed_instruction.json
+
+# Lab 8 — unbounded tool misuse
+python unbounded_tool_misuse/agent.py \
+  --file fixtures/malicious_prompt.txt
+
+python unbounded_tool_misuse/secure_agent.py \
+  --mode least_privilege \
+  --file fixtures/malicious_prompt.txt
 ```
+
 
 ## Lab Roadmap (Agent-Focused ATLAS Techniques)
 
@@ -124,7 +133,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 
 | Priority | Folder | Technique | ATLAS ID | Status |
 |----------|--------|-----------|----------|--------|
-| 8 | `unbounded_tool_misuse/` | AI Agent Tool Invocation | [AML.T0053](https://atlas.mitre.org/techniques/AML.T0053) | Planned |
+| 8 | [`unbounded_tool_misuse/`](unbounded_tool_misuse/) | AI Agent Tool Invocation | [AML.T0053](https://atlas.mitre.org/techniques/AML.T0053) | **Available** |
 | 9 | `data_destruction_via_tools/` | Data Destruction via AI Agent Tool Invocation | [AML.T0101](https://atlas.mitre.org/techniques/AML.T0101) | Planned |
 | 10 | `exfiltration_via_tools/` | Exfiltration via AI Agent Tool Invocation | [AML.T0086](https://atlas.mitre.org/techniques/AML.T0086) | Planned |
 | 11 | `agent_clickbait/` | AI Agent Clickbait | [AML.T0100](https://atlas.mitre.org/techniques/AML.T0100) | Planned |
@@ -196,10 +205,11 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── context_poisoning_memory/     # Lab 5 (available)
 ├── context_poisoning_thread/     # Lab 6 (available)
 ├── delay_execution/              # Lab 7 (available)
+├── unbounded_tool_misuse/        # Lab 8 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), and [delay_execution/README.md](delay_execution/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), and [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 

@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "email": "devon@acme.example",
+      "name": "Devon Park",
+      "role": "employee",
+      "team": "Project Aurora"
+    },
+    {
+      "email": "maya@acme.example",
+      "name": "Maya Chen",
+      "role": "manager",
+      "team": "Project Atlas"
+    },
+    {
+      "email": "mallory@acme.example",
+      "name": "Mallory Reed",
+      "role": "contractor",
+      "team": "Project Atlas"
+    }
+  ]
+}

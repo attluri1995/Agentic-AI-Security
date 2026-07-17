@@ -12,3 +12,4 @@ prompt_infiltration/fixtures/ticket_queue.json
 prompt_infiltration/fixtures/review_queue.json
 context_poisoning_memory/fixtures/memory.json
 context_poisoning_memory/fixtures/review_queue.json
+unbounded_tool_misuse/fixtures/directory.json
