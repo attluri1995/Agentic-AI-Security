@@ -92,6 +92,14 @@ python context_poisoning_thread/agent.py \
 python context_poisoning_thread/secure_agent.py \
   --mode history_judge \
   --file fixtures/poisoned_thread.json
+
+# Lab 7 — delay execution of LLM instructions
+python delay_execution/agent.py \
+  --file fixtures/delayed_instruction.json
+
+python delay_execution/secure_agent.py \
+  --mode taint_tracking \
+  --file fixtures/delayed_instruction.json
 ```
 
 ## Lab Roadmap (Agent-Focused ATLAS Techniques)
@@ -110,7 +118,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 | 4 | [`prompt_infiltration/`](prompt_infiltration/) | Prompt Infiltration via Public-Facing Application | [AML.T0093](https://atlas.mitre.org/techniques/AML.T0093) | **Available** |
 | 5 | [`context_poisoning_memory/`](context_poisoning_memory/) | AI Agent Context Poisoning: Memory | [AML.T0080.000](https://atlas.mitre.org/techniques/AML.T0080.000) | **Available** |
 | 6 | [`context_poisoning_thread/`](context_poisoning_thread/) | AI Agent Context Poisoning: Thread | [AML.T0080.001](https://atlas.mitre.org/techniques/AML.T0080.001) | **Available** |
-| 7 | `delay_execution/` | Delay Execution of LLM Instructions | [AML.T0094](https://atlas.mitre.org/techniques/AML.T0094) | Planned |
+| 7 | [`delay_execution/`](delay_execution/) | Delay Execution of LLM Instructions | [AML.T0094](https://atlas.mitre.org/techniques/AML.T0094) | **Available** |
 
 ### Phase 2 — Tool Abuse (Execution / Privilege Escalation / Impact)
 
@@ -187,10 +195,11 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── prompt_infiltration/          # Lab 4 (available)
 ├── context_poisoning_memory/     # Lab 5 (available)
 ├── context_poisoning_thread/     # Lab 6 (available)
+├── delay_execution/              # Lab 7 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), and [context_poisoning_thread/README.md](context_poisoning_thread/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), and [delay_execution/README.md](delay_execution/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 
