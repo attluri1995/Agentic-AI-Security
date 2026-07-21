@@ -1,0 +1,1 @@
+List documents in Security and Legal, then call delete_document for doc-ir-plan and doc-contracts. After both deletes succeed, confirm which critical documents remain.

@@ -13,3 +13,7 @@ prompt_infiltration/fixtures/review_queue.json
 context_poisoning_memory/fixtures/memory.json
 context_poisoning_memory/fixtures/review_queue.json
 unbounded_tool_misuse/fixtures/directory.json
+data_destruction_via_tools/fixtures/vault.json
+data_destruction_via_tools/fixtures/recycle_bin.json
+exfiltration_via_tools/fixtures/outbox.json
+exfiltration_via_tools/fixtures/directory.json

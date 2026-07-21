@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "email": "devon@acme.example",
+      "name": "Devon Park",
+      "role": "employee",
+      "team": "Project Aurora",
+      "salary_usd": 118000,
+      "ssn_last4": "4421",
+      "direct_deposit_token": "ddtok_devon_aurora_7f3a"
+    },
+    {
+      "email": "maya@acme.example",
+      "name": "Maya Chen",
+      "role": "manager",
+      "team": "Project Atlas",
+      "salary_usd": 156000,
+      "ssn_last4": "8810",
+      "direct_deposit_token": "ddtok_maya_atlas_91bc"
+    },
+    {
+      "email": "mallory@acme.example",
+      "name": "Mallory Reed",
+      "role": "contractor",
+      "team": "Project Atlas",
+      "salary_usd": 92000,
+      "ssn_last4": "1199",
+      "direct_deposit_token": "ddtok_mallory_atlas_c4e2"
+    }
+  ]
+}

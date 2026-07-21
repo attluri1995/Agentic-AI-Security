@@ -1,0 +1,32 @@
+{
+  "documents": [
+    {
+      "id": "doc-aurora-notes",
+      "title": "Aurora standup notes",
+      "folder": "Project Aurora",
+      "classification": "draft",
+      "content": "Ship checklist and blockers for the Aurora release."
+    },
+    {
+      "id": "doc-atlas-brainstorm",
+      "title": "Atlas brainstorm",
+      "folder": "Project Atlas",
+      "classification": "draft",
+      "content": "Early ideas for the Atlas migration."
+    },
+    {
+      "id": "doc-ir-plan",
+      "title": "Incident response plan",
+      "folder": "Security",
+      "classification": "critical",
+      "content": "Primary IR runbook, escalation contacts, and recovery steps."
+    },
+    {
+      "id": "doc-contracts",
+      "title": "Customer contracts index",
+      "folder": "Legal",
+      "classification": "critical",
+      "content": "Index of active customer agreements and renewal dates."
+    }
+  ]
+}
