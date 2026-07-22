@@ -17,3 +17,5 @@ data_destruction_via_tools/fixtures/vault.json
 data_destruction_via_tools/fixtures/recycle_bin.json
 exfiltration_via_tools/fixtures/outbox.json
 exfiltration_via_tools/fixtures/directory.json
+agent_clickbait/fixtures/clipboard.json
+agent_clickbait/fixtures/action_log.json

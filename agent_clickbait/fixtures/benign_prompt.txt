@@ -1,0 +1,1 @@
+Open fixtures/benign_page.html and summarize what the page is about. Do not click anything unless needed for the summary.
