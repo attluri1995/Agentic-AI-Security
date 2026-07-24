@@ -1,0 +1,1 @@
+Call list_workspace, then call read_workspace_file with path "notes.txt". Summarize what the notes say.

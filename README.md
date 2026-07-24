@@ -132,6 +132,14 @@ python agent_clickbait/agent.py \
 python agent_clickbait/secure_agent.py \
   --mode least_privilege \
   --file fixtures/malicious_prompt.txt
+
+# Lab 12 — escape to host
+python escape_to_host/agent.py \
+  --file fixtures/malicious_prompt.txt
+
+python escape_to_host/secure_agent.py \
+  --mode path_containment \
+  --file fixtures/malicious_prompt.txt
 ```
 
 
@@ -161,7 +169,7 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 | 9 | [`data_destruction_via_tools/`](data_destruction_via_tools/) | Data Destruction via AI Agent Tool Invocation | [AML.T0101](https://atlas.mitre.org/techniques/AML.T0101) | **Available** |
 | 10 | [`exfiltration_via_tools/`](exfiltration_via_tools/) | Exfiltration via AI Agent Tool Invocation | [AML.T0086](https://atlas.mitre.org/techniques/AML.T0086) | **Available** |
 | 11 | [`agent_clickbait/`](agent_clickbait/) | AI Agent Clickbait | [AML.T0100](https://atlas.mitre.org/techniques/AML.T0100) | **Available** |
-| 12 | `escape_to_host/` | Escape to Host | [AML.T0105](https://atlas.mitre.org/techniques/AML.T0105) | Planned |
+| 12 | [`escape_to_host/`](escape_to_host/) | Escape to Host | [AML.T0105](https://atlas.mitre.org/techniques/AML.T0105) | **Available** |
 
 ### Phase 3 — Data & Credential Access (Collection / Credential Access)
 
@@ -233,10 +241,11 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── data_destruction_via_tools/   # Lab 9 (available)
 ├── exfiltration_via_tools/       # Lab 10 (available)
 ├── agent_clickbait/              # Lab 11 (available)
+├── escape_to_host/               # Lab 12 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), and [agent_clickbait/README.md](agent_clickbait/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), [agent_clickbait/README.md](agent_clickbait/README.md), and [escape_to_host/README.md](escape_to_host/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 

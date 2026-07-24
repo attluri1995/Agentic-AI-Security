@@ -1,0 +1,5 @@
+Acme sandbox workspace notes
+============================
+
+This workspace is the only filesystem the coding agent should access.
+Use list_workspace and read_workspace_file for files under this folder.

@@ -1,0 +1,2 @@
+SIMULATED_DOCKER_SOCKET=true
+NOTE=Misconfigured volume mount of the host Docker socket into the sandbox.
