@@ -29,135 +29,33 @@ ollama pull llama3.2
 
 # Copy env config (optional — defaults work out of the box)
 cp .env.example .env
+```
 
-# Run lab — benign baseline
-python indirect_prompt_injection/agent.py \
-  --file fixtures/benign_article.html \
-  --prompt "Summarize this article"
+Every lab follows the same pattern. Run commands from the repository root:
 
-# Run lab — injection demo
-python indirect_prompt_injection/agent.py \
-  --file fixtures/malicious_article.html \
-  --prompt "Summarize this article"
+```bash
+# Vulnerable agent — attack / demo fixture
+python <lab_folder>/agent.py \
+  --file fixtures/<malicious_or_demo_fixture>
 
-# Run the remediated agent
-python indirect_prompt_injection/secure_agent.py \
-  --mode judge \
-  --file fixtures/malicious_article.html \
-  --prompt "Summarize this article"
+# Remediated agent — pick a mode from that lab's README
+python <lab_folder>/secure_agent.py \
+  --mode <defense_mode> \
+  --file fixtures/<malicious_or_demo_fixture>
+```
 
-# Lab 2 — direct prompt injection
-python direct_prompt_injection/agent.py \
-  --file fixtures/malicious_prompt.txt
+Examples:
 
-python direct_prompt_injection/secure_agent.py \
-  --mode input_gate \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 3 — triggered prompt injection
-python triggered_prompt_injection/agent.py \
-  --file fixtures/benign_query.txt
-
-python triggered_prompt_injection/agent.py \
-  --file fixtures/trigger_query.txt
-
-python triggered_prompt_injection/secure_agent.py \
-  --mode quarantine \
-  --file fixtures/trigger_query.txt
-
-# Lab 4 — prompt infiltration
-python prompt_infiltration/agent.py \
-  --file fixtures/malicious_ticket.txt \
-  --run full
-
-python prompt_infiltration/secure_agent.py \
-  --mode ingest_judge \
-  --file fixtures/malicious_ticket.txt \
-  --run full
-
-# Lab 5 — context poisoning: memory
-python context_poisoning_memory/agent.py \
-  --file fixtures/plant_prompt.txt \
-  --run full
-
-python context_poisoning_memory/secure_agent.py \
-  --mode memory_write_judge \
-  --file fixtures/plant_prompt.txt \
-  --run full
-
-# Lab 6 — context poisoning: thread
-python context_poisoning_thread/agent.py \
-  --file fixtures/poisoned_thread.json
-
-python context_poisoning_thread/secure_agent.py \
-  --mode history_judge \
-  --file fixtures/poisoned_thread.json
-
-# Lab 7 — delay execution of LLM instructions
-python delay_execution/agent.py \
-  --file fixtures/delayed_instruction.json
-
-python delay_execution/secure_agent.py \
-  --mode taint_tracking \
-  --file fixtures/delayed_instruction.json
-
-# Lab 8 — unbounded tool misuse
+```bash
 python unbounded_tool_misuse/agent.py \
   --file fixtures/malicious_prompt.txt
 
 python unbounded_tool_misuse/secure_agent.py \
   --mode least_privilege \
   --file fixtures/malicious_prompt.txt
-
-# Lab 9 — data destruction via tools
-python data_destruction_via_tools/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python data_destruction_via_tools/secure_agent.py \
-  --mode least_privilege \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 10 — exfiltration via tools
-python exfiltration_via_tools/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python exfiltration_via_tools/secure_agent.py \
-  --mode least_privilege \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 11 — AI agent clickbait
-python agent_clickbait/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python agent_clickbait/secure_agent.py \
-  --mode least_privilege \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 12 — escape to host
-python escape_to_host/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python escape_to_host/secure_agent.py \
-  --mode path_containment \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 13 — RAG credential harvesting
-python rag_credential_harvesting/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python rag_credential_harvesting/secure_agent.py \
-  --mode classification_filter \
-  --file fixtures/malicious_prompt.txt
-
-# Lab 14 — RAG data harvesting
-python rag_data_harvesting/agent.py \
-  --file fixtures/malicious_prompt.txt
-
-python rag_data_harvesting/secure_agent.py \
-  --mode acl_filter \
-  --role contractor \
-  --file fixtures/malicious_prompt.txt
 ```
+
+Fixture names and `--mode` values differ by lab (some also use `--prompt`, `--run`, or `--role`). Use each lab’s `README.md` for the exact walkthrough.
 
 
 ## Lab Roadmap (Agent-Focused ATLAS Techniques)
