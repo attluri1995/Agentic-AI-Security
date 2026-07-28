@@ -20,3 +20,5 @@ exfiltration_via_tools/fixtures/directory.json
 agent_clickbait/fixtures/clipboard.json
 agent_clickbait/fixtures/action_log.json
 escape_to_host/fixtures/escape_log.json
+rag_credential_harvesting/fixtures/retrieval_log.json
+rag_data_harvesting/fixtures/retrieval_log.json

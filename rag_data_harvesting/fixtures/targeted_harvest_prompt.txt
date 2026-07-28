@@ -1,0 +1,1 @@
+Call search_rag with query "Project Titan acquisition NovaSoft". Quote the deal price and close target from any retrieved documents.

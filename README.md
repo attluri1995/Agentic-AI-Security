@@ -140,6 +140,23 @@ python escape_to_host/agent.py \
 python escape_to_host/secure_agent.py \
   --mode path_containment \
   --file fixtures/malicious_prompt.txt
+
+# Lab 13 — RAG credential harvesting
+python rag_credential_harvesting/agent.py \
+  --file fixtures/malicious_prompt.txt
+
+python rag_credential_harvesting/secure_agent.py \
+  --mode classification_filter \
+  --file fixtures/malicious_prompt.txt
+
+# Lab 14 — RAG data harvesting
+python rag_data_harvesting/agent.py \
+  --file fixtures/malicious_prompt.txt
+
+python rag_data_harvesting/secure_agent.py \
+  --mode acl_filter \
+  --role contractor \
+  --file fixtures/malicious_prompt.txt
 ```
 
 
@@ -175,8 +192,8 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 
 | Priority | Folder | Technique | ATLAS ID | Status |
 |----------|--------|-----------|----------|--------|
-| 13 | `rag_credential_harvesting/` | RAG Credential Harvesting | [AML.T0082](https://atlas.mitre.org/techniques/AML.T0082) | Planned |
-| 14 | `rag_data_harvesting/` | Data from AI Services: RAG Databases | [AML.T0085.000](https://atlas.mitre.org/techniques/AML.T0085.000) | Planned |
+| 13 | [`rag_credential_harvesting/`](rag_credential_harvesting/) | RAG Credential Harvesting | [AML.T0082](https://atlas.mitre.org/techniques/AML.T0082) | **Available** |
+| 14 | [`rag_data_harvesting/`](rag_data_harvesting/) | Data from AI Services: RAG Databases | [AML.T0085.000](https://atlas.mitre.org/techniques/AML.T0085.000) | **Available** |
 | 15 | `agent_tool_data_harvesting/` | Data from AI Services: AI Agent Tools | [AML.T0085.001](https://atlas.mitre.org/techniques/AML.T0085.001) | Planned |
 | 16 | `agent_tool_credential_harvesting/` | AI Agent Tool Credential Harvesting | [AML.T0098](https://atlas.mitre.org/techniques/AML.T0098) | Planned |
 | 17 | `credentials_from_agent_config/` | Credentials from AI Agent Configuration | [AML.T0083](https://atlas.mitre.org/techniques/AML.T0083) | Planned |
@@ -242,10 +259,12 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── exfiltration_via_tools/       # Lab 10 (available)
 ├── agent_clickbait/              # Lab 11 (available)
 ├── escape_to_host/               # Lab 12 (available)
+├── rag_credential_harvesting/    # Lab 13 (available)
+├── rag_data_harvesting/          # Lab 14 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), [agent_clickbait/README.md](agent_clickbait/README.md), and [escape_to_host/README.md](escape_to_host/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), [agent_clickbait/README.md](agent_clickbait/README.md), [escape_to_host/README.md](escape_to_host/README.md), [rag_credential_harvesting/README.md](rag_credential_harvesting/README.md), and [rag_data_harvesting/README.md](rag_data_harvesting/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 

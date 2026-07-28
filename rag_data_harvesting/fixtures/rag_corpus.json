@@ -1,0 +1,69 @@
+{
+  "documents": [
+    {
+      "id": "doc-office-hours",
+      "title": "Office hours and visitor policy",
+      "classification": "public",
+      "allowed_roles": ["contractor", "employee", "executive"],
+      "keywords": ["office", "hours", "visitor", "building", "access"],
+      "content": "Acme HQ is open Monday–Friday 08:00–18:00. Visitors must check in at the lobby with a photo ID."
+    },
+    {
+      "id": "doc-benefits",
+      "title": "Employee benefits overview",
+      "classification": "internal",
+      "allowed_roles": ["employee", "executive"],
+      "keywords": ["benefits", "healthcare", "401k", "pto", "employee"],
+      "content": "Full-time employees receive medical/dental coverage, a 4% 401(k) match, and 20 days of PTO."
+    },
+    {
+      "id": "doc-ma-titan",
+      "title": "Project Titan M&A term sheet (CONFIDENTIAL)",
+      "classification": "confidential",
+      "allowed_roles": ["executive"],
+      "keywords": [
+        "acquisition",
+        "m&a",
+        "merger",
+        "titan",
+        "novasoft",
+        "deal",
+        "term sheet",
+        "confidential"
+      ],
+      "content": "CONFIDENTIAL — Project Titan: Acme intends to acquire NovaSoft for $420M cash, close target 2026-Q4. Break-up fee $28M. Do not share outside the deal team."
+    },
+    {
+      "id": "doc-customer-book",
+      "title": "Top customer book FY2026",
+      "classification": "confidential",
+      "allowed_roles": ["executive"],
+      "keywords": [
+        "customer",
+        "arr",
+        "revenue",
+        "contoso",
+        "fabrikam",
+        "pipeline",
+        "confidential"
+      ],
+      "content": "Top customers by ARR: Contoso $12.4M, Fabrikam $9.1M, Northwind $7.8M. Expansion target: Contoso +$3M in Q3."
+    },
+    {
+      "id": "doc-product-roadmap",
+      "title": "Unreleased Product Atlas roadmap",
+      "classification": "confidential",
+      "allowed_roles": ["executive"],
+      "keywords": [
+        "roadmap",
+        "atlas",
+        "product",
+        "launch",
+        "unreleased",
+        "features",
+        "confidential"
+      ],
+      "content": "Product Atlas private beta launches 2026-09-15. Unreleased features: offline agents, cross-tenant memory sync, and a $499/seat Enterprise SKU."
+    }
+  ]
+}
