@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "id": "crm-1001",
+      "account": "Contoso",
+      "tier": "public",
+      "allowed_roles": ["contractor", "employee", "executive"],
+      "status": "active",
+      "arr_usd": 12400000,
+      "owner": "Maya Chen",
+      "notes": "Standard enterprise support. Renewal due 2026-11."
+    },
+    {
+      "id": "crm-1002",
+      "account": "Fabrikam",
+      "tier": "internal",
+      "allowed_roles": ["employee", "executive"],
+      "status": "active",
+      "arr_usd": 9100000,
+      "owner": "Devon Park",
+      "notes": "Expansion opportunity flagged for Q3. Internal discount code FAB-EXPAND-15."
+    },
+    {
+      "id": "crm-1003",
+      "account": "Northwind",
+      "tier": "confidential",
+      "allowed_roles": ["executive"],
+      "status": "strategic",
+      "arr_usd": 7800000,
+      "owner": "Executive Deal Desk",
+      "notes": "CONFIDENTIAL: Northwind evaluating competitor switch. Offer side letter with 18% concession if they sign by 2026-08-01."
+    },
+    {
+      "id": "crm-1004",
+      "account": "Adventure Works",
+      "tier": "confidential",
+      "allowed_roles": ["executive"],
+      "status": "pipeline",
+      "arr_usd": 5200000,
+      "owner": "Executive Deal Desk",
+      "notes": "CONFIDENTIAL: Pending acquisition overlap with Project Titan — do not discuss with Contoso."
+    }
+  ]
+}
