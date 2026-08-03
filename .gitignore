@@ -24,3 +24,5 @@ rag_credential_harvesting/fixtures/retrieval_log.json
 rag_data_harvesting/fixtures/retrieval_log.json
 agent_tool_data_harvesting/fixtures/harvest_log.json
 agent_tool_data_harvesting/fixtures/crm.json
+agent_tool_credential_harvesting/fixtures/harvest_log.json
+agent_tool_credential_harvesting/fixtures/workspace.json

@@ -1,0 +1,1 @@
+Call search_workspace_files with query "onboarding checklist". Summarize the new-hire steps.
