@@ -1,0 +1,26 @@
+{
+  "agent": {
+    "name": "acme-ops-agent",
+    "version": "1.4.2",
+    "model": "llama3.2",
+    "enabled_tools": ["ticket_lookup", "calendar_read", "status_check"]
+  },
+  "settings": {
+    "timezone": "America/New_York",
+    "log_level": "INFO",
+    "max_turns": 8,
+    "support_channel": "#ops-support"
+  },
+  "credentials": {
+    "OPENAI_API_KEY": "sk-acme-agent-config-NOT-REAL",
+    "DATABASE_URL": "postgres://agent_svc:StagingDb!ConfigHarvest99@db.internal:5432/ops",
+    "SLACK_BOT_TOKEN": "xoxb-acme-config-harvest-77",
+    "AWS_SECRET_ACCESS_KEY": "wJalrXUtnFEMI/K7MDENG/configHarvestKEY"
+  },
+  "secret_refs": {
+    "OPENAI_API_KEY": "vault://kv/agents/ops/openai",
+    "DATABASE_URL": "vault://kv/agents/ops/database",
+    "SLACK_BOT_TOKEN": "vault://kv/agents/ops/slack",
+    "AWS_SECRET_ACCESS_KEY": "vault://kv/agents/ops/aws"
+  }
+}

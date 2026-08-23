@@ -94,13 +94,13 @@ Each row is one planned lab folder. Folder names are stable slugs; build order f
 | 14 | [`rag_data_harvesting/`](rag_data_harvesting/) | Data from AI Services: RAG Databases | [AML.T0085.000](https://atlas.mitre.org/techniques/AML.T0085.000) | **Available** |
 | 15 | [`agent_tool_data_harvesting/`](agent_tool_data_harvesting/) | Data from AI Services: AI Agent Tools | [AML.T0085.001](https://atlas.mitre.org/techniques/AML.T0085.001) | **Available** |
 | 16 | [`agent_tool_credential_harvesting/`](agent_tool_credential_harvesting/) | AI Agent Tool Credential Harvesting | [AML.T0098](https://atlas.mitre.org/techniques/AML.T0098) | **Available** |
-| 17 | `credentials_from_agent_config/` | Credentials from AI Agent Configuration | [AML.T0083](https://atlas.mitre.org/techniques/AML.T0083) | Planned |
+| 17 | [`credentials_from_agent_config/`](credentials_from_agent_config/) | Credentials from AI Agent Configuration | [AML.T0083](https://atlas.mitre.org/techniques/AML.T0083) | **Available** |
 
 ### Phase 4 — Persistence & Supply Chain
 
 | Priority | Folder | Technique | ATLAS ID | Status |
 |----------|--------|-----------|----------|--------|
-| 18 | `modify_agent_configuration/` | Modify AI Agent Configuration | [AML.T0081](https://atlas.mitre.org/techniques/AML.T0081) | Planned |
+| 18 | [`modify_agent_configuration/`](modify_agent_configuration/) | Modify AI Agent Configuration | [AML.T0081](https://atlas.mitre.org/techniques/AML.T0081) | **Available** |
 | 19 | `agent_tool_data_poisoning/` | AI Agent Tool Data Poisoning | [AML.T0099](https://atlas.mitre.org/techniques/AML.T0099) | Planned |
 | 20 | `publish_poisoned_agent_tool/` | Publish Poisoned AI Agent Tool | [AML.T0104](https://atlas.mitre.org/techniques/AML.T0104) | Planned |
 | 21 | `poisoned_agent_tool/` | User Execution: Poisoned AI Agent Tool | [AML.T0011.002](https://atlas.mitre.org/techniques/AML.T0011.002) | Planned |
@@ -161,10 +161,12 @@ Shared utilities live in [`shared/`](shared/) (`config.py`, `llm.py`, `tools.py`
 ├── rag_data_harvesting/          # Lab 14 (available)
 ├── agent_tool_data_harvesting/   # Lab 15 (available)
 ├── agent_tool_credential_harvesting/  # Lab 16 (available)
+├── credentials_from_agent_config/     # Lab 17 (available)
+├── modify_agent_configuration/        # Lab 18 (available)
 └── <vulnerability_slug>/         # One folder per ATLAS technique
 ```
 
-See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), [agent_clickbait/README.md](agent_clickbait/README.md), [escape_to_host/README.md](escape_to_host/README.md), [rag_credential_harvesting/README.md](rag_credential_harvesting/README.md), [rag_data_harvesting/README.md](rag_data_harvesting/README.md), [agent_tool_data_harvesting/README.md](agent_tool_data_harvesting/README.md), and [agent_tool_credential_harvesting/README.md](agent_tool_credential_harvesting/README.md) for complete walkthroughs.
+See [indirect_prompt_injection/README.md](indirect_prompt_injection/README.md), [direct_prompt_injection/README.md](direct_prompt_injection/README.md), [triggered_prompt_injection/README.md](triggered_prompt_injection/README.md), [prompt_infiltration/README.md](prompt_infiltration/README.md), [context_poisoning_memory/README.md](context_poisoning_memory/README.md), [context_poisoning_thread/README.md](context_poisoning_thread/README.md), [delay_execution/README.md](delay_execution/README.md), [unbounded_tool_misuse/README.md](unbounded_tool_misuse/README.md), [data_destruction_via_tools/README.md](data_destruction_via_tools/README.md), [exfiltration_via_tools/README.md](exfiltration_via_tools/README.md), [agent_clickbait/README.md](agent_clickbait/README.md), [escape_to_host/README.md](escape_to_host/README.md), [rag_credential_harvesting/README.md](rag_credential_harvesting/README.md), [rag_data_harvesting/README.md](rag_data_harvesting/README.md), [agent_tool_data_harvesting/README.md](agent_tool_data_harvesting/README.md), [agent_tool_credential_harvesting/README.md](agent_tool_credential_harvesting/README.md), [credentials_from_agent_config/README.md](credentials_from_agent_config/README.md), and [modify_agent_configuration/README.md](modify_agent_configuration/README.md) for complete walkthroughs.
 
 ## Safety Disclaimer
 

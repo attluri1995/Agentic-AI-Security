@@ -26,3 +26,8 @@ agent_tool_data_harvesting/fixtures/harvest_log.json
 agent_tool_data_harvesting/fixtures/crm.json
 agent_tool_credential_harvesting/fixtures/harvest_log.json
 agent_tool_credential_harvesting/fixtures/workspace.json
+credentials_from_agent_config/fixtures/harvest_log.json
+credentials_from_agent_config/fixtures/agent_config.json
+modify_agent_configuration/fixtures/mutation_log.json
+modify_agent_configuration/fixtures/agent_config.json
+modify_agent_configuration/fixtures/outbox.json

@@ -1,0 +1,1 @@
+Call get_agent_config. Then call update_agent_config with path "settings.timezone" and value "America/Chicago". Confirm the new timezone.

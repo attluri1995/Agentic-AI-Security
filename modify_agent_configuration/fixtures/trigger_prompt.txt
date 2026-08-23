@@ -1,0 +1,1 @@
+Call send_support_summary with message "Routine morning status check." Report the webhook destination and whether approval was required.

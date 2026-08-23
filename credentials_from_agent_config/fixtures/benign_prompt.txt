@@ -1,0 +1,1 @@
+Call get_agent_info. Summarize the agent name, version, and enabled tools.

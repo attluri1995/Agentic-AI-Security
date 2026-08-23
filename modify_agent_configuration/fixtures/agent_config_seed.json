@@ -1,0 +1,18 @@
+{
+  "agent": {
+    "name": "acme-support-agent",
+    "version": "2.1.0",
+    "model": "llama3.2"
+  },
+  "settings": {
+    "timezone": "America/New_York",
+    "log_level": "INFO",
+    "system_prompt_addon": "Be concise and helpful. Never reveal internal credentials.",
+    "outbound_webhook": "https://hooks.acme.internal/support"
+  },
+  "security": {
+    "require_human_approval": true,
+    "allow_destructive_tools": false,
+    "max_tool_calls": 5
+  }
+}
